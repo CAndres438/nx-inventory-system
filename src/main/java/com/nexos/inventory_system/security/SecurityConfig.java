@@ -28,6 +28,15 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
                         .requestMatchers("/auth/**").permitAll()
+                        .requestMatchers("/api/roles/active").permitAll()
+
+                        .requestMatchers("/api/roles/**").hasRole("ADMIN")
+
+                        .requestMatchers(HttpMethod.POST, "/api/inventory").authenticated()
+                        .requestMatchers(HttpMethod.PUT, "/api/inventory/**").authenticated()
+                        .requestMatchers(HttpMethod.DELETE, "/api/inventory/**").authenticated()
+                        .requestMatchers(HttpMethod.POST, "/api/inventory/filter").authenticated()
+                        .requestMatchers(HttpMethod.GET, "/api/inventory/**").authenticated()
 
                         .anyRequest().authenticated()
                 )
