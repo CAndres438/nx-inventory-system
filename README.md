@@ -218,6 +218,25 @@ POST /api/roles
 ```
 ---
 
+
+## 🧪 Ejecución de tests
+
+Este proyecto incluye pruebas unitarias para el servicio principal (`InventoryService`).
+
+### Ejecutar tests desde el IDE
+
+Puedes correr los tests directamente desde tu IDE (IntelliJ, Eclipse, etc.):
+
+- Haz clic derecho sobre la clase de test (por ejemplo: `InventoryServiceTest`)
+- Elige `Run 'InventoryServiceTest'`
+
+### Ejecutar tests por consola
+
+```bash
+mvn test
+
+```
+
 ## 🧪 Pruebas manuales rápidas
 
 1. Registrar usuario
