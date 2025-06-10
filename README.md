@@ -6,6 +6,10 @@ registrar y consultar productos, administrar roles de usuarios y proteger el acc
 funcionalidades mediante autenticación basada en tokens.
 ---
 
+## Evidencia General (Incluye imágenes de pruebas funcionales y ERD
+
+🔍 [Ver carpeta de evidencias](./Evidencia_General/)
+
 ## 🛠️ Requisitos
 
 - Java 21 (JDK)
