@@ -14,12 +14,20 @@ public class Role implements GrantedAuthority {
     @Column(nullable = false, unique = true)
     private String name;
 
+    @Column(nullable = false, length = 100)
+    private String displayName;
+
+    @Column(nullable = false)
+    private Boolean active = true;
+
+
     public Role() {
     }
 
-    public Role(Integer id, String name) {
+    public Role(Integer id, String name, String displayName) {
         this.id = id;
         this.name = name;
+        this.displayName = displayName;
     }
 
     @Override
@@ -42,4 +50,21 @@ public class Role implements GrantedAuthority {
     public void setName(String name) {
         this.name = name;
     }
+
+    public String getDisplayName() {
+        return displayName;
+    }
+
+    public void setDisplayName(String displayName) {
+        this.displayName = displayName;
+    }
+
+    public Boolean getActive() {
+        return active;
+    }
+
+    public void setActive(Boolean active) {
+        this.active = active;
+    }
+
 }
