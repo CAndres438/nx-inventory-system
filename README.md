@@ -1,4 +1,8 @@
-# Inventory System - Backend (Spring Boot)
+<p align="center">
+  <img src="./nx.png" alt="Nx Inventory System" width="120" />
+</p>
+
+<h1 align="center">Nx Inventory System Backend</h1>
 
 Bienvenido al sistema de gestión de inventario para el sector automotriz, desarrollado con
 **Spring Boot**, **JWT**, **PostgreSQL**. Esta aplicación backend permite 
